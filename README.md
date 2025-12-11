@@ -1,7 +1,3 @@
-<img src="https://dummyimage.com/1300x260/0a0a0a/00eaff&text=MyLayak+Kiosk+Prototype" width="100%" />
-<p align="center"> <a><img src="https://img.shields.io/badge/build-passing-00c853?style=flat-square"></a> <a><img src="https://img.shields.io/badge/demo-prototype-blue?style=flat-square"></a> <a><img src="https://img.shields.io/badge/license-MIT-yellow?style=flat-square"></a> </p>
-MyLayak — Zero-Trust Eligibility Kiosk (Prototype)
-
 <p align="center">
   <img src="https://dummyimage.com/1300x260/0a0a0a/00eaff&text=MyLayak+Kiosk+Prototype" width="100%">
 </p>
@@ -19,6 +15,7 @@ A frictionless, form-free public service experience powered by MyDigital ID
 </p>
 
 ---
+
 
 
 
