@@ -1,11 +1,87 @@
+<img src="https://dummyimage.com/1300x260/0a0a0a/00eaff&text=MyLayak+Kiosk+Prototype" width="100%" />
+<p align="center"> <a><img src="https://img.shields.io/badge/build-passing-00c853?style=flat-square"></a> <a><img src="https://img.shields.io/badge/demo-prototype-blue?style=flat-square"></a> <a><img src="https://img.shields.io/badge/license-MIT-yellow?style=flat-square"></a> </p>
+MyLayak — Zero-Trust Eligibility Kiosk (Prototype)
 
-  # Government Digital Service Kiosk
+MyLayak is a UI/UX prototype demonstrating how citizens can securely check and activate public services using MyDigital ID.
+It showcases a form-free, frictionless eligibility experience powered by Soulbound Eligibility Tokens (SETs).
 
-  This is a code bundle for Government Digital Service Kiosk. The original project is available at https://www.figma.com/design/CgL8fGinH1rMeIDd1dthQV/Government-Digital-Service-Kiosk.
+No real backend, identity data, or government systems are connected.
+This is strictly a concept and interaction prototype.
 
-  ## Running the code
+✨ Key Features
+• Form-Free, Instant Authentication
 
-  Run `npm i` to install the dependencies.
+Citizens authenticate via MyKad tap/insert or MyDigital ID QR scan — no forms, no uploads.
 
-  Run `npm run dev` to start the development server.
-  "# MyLayak" 
+• Eligibility Wallet (SET-Based)
+
+Displays government-issued, non-sensitive eligibility tokens such as:
+
+Student
+
+B40 Household
+
+Senior Citizen
+
+Regional Eligibility
+
+• Automatic Service Matching
+
+MyLayak identifies services the citizen is pre-qualified for using verified SETs.
+
+• One-Click Activation with Clear Consent
+
+Only eligibility attributes are shared.
+No IC number, income, or documents are ever displayed or transmitted.
+
+• Complete Kiosk Flow Prototype
+
+Welcome → Authentication → Eligibility Wallet → Services → Consent → Activation → Success → Auto Logout.
+
+🔐 Security Model (Simplified)
+
+MyLayak follows a strict Zero-Trust architecture.
+The kiosk is treated as untrusted at all times.
+
+• Identity–Eligibility Separation
+
+MyDigital ID handles all identity & biometric verification
+
+MyLayak receives only a hashed ID and non-sensitive eligibility tokens
+
+• Soulbound Eligibility Tokens (SETs)
+
+Issued and signed by a government Oracle
+
+Non-transferable and cannot be forged
+
+• Secure Communication
+
+All kiosk–backend interactions assume modern, encrypted channels suitable for future-safe deployments.
+
+• No Data Stored on Kiosk
+
+No caching, no tokens, no personal info.
+Steganographic markers help prevent fake QR screens or spoofed kiosks.
+
+Result: Even if the kiosk is compromised, identity remains protected and eligibility cannot be altered.
+
+🚀 Running the Prototype
+
+Install dependencies:
+
+npm i
+
+
+Start development server:
+
+npm run dev
+
+📁 Project Status
+
+This repository contains UI/UX screens only.
+It is intended for demonstration, pitching, and concept validation — not production deployment.
+
+📘 License
+
+MIT License.
