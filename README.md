@@ -83,16 +83,16 @@ Steganographic markers help prevent spoofed QR or fake kiosk screens.
 
 Install dependencies:
 
-```sh
+
 npm i
 Start development server:
 npm run dev
-```sh
+
 ---
 
-📁 Project Status
+# 📁 Project Status
 This repository contains UI/UX screens only.
 It is intended for demonstration, pitching, and concept validation, not production use.
 
-📘 License
+# 📘 License
 MIT License.
