@@ -16,89 +16,83 @@ A frictionless, form-free public service experience powered by MyDigital ID
 
 ---
 
+# 📌 Overview
+MyLayak is a **UI/UX prototype** demonstrating how citizens can securely check and activate public services using **MyDigital ID**.  
+It showcases a **form-free, frictionless eligibility experience** powered by **Soulbound Eligibility Tokens (SETs)**.
 
+No real backend, identity data, or government systems are connected.  
+This is strictly a **concept and interaction prototype**.
 
+---
 
-MyLayak is a UI/UX prototype demonstrating how citizens can securely check and activate public services using MyDigital ID.
-It showcases a form-free, frictionless eligibility experience powered by Soulbound Eligibility Tokens (SETs).
+# ✨ Key Features
 
-No real backend, identity data, or government systems are connected.
-This is strictly a concept and interaction prototype.
+## • **Form-Free, Instant Authentication**
+Authenticate via **MyKad tap/insert** or **MyDigital ID QR scan** — no forms, no document uploads.
 
-✨ Key Features
-• Form-Free, Instant Authentication
+---
 
-Citizens authenticate via MyKad tap/insert or MyDigital ID QR scan — no forms, no uploads.
-
-• Eligibility Wallet (SET-Based)
-
+## • **Eligibility Wallet (SET-Based)**
 Displays government-issued, non-sensitive eligibility tokens such as:
+- Student  
+- B40 Household  
+- Senior Citizen  
+- Regional Eligibility  
 
-Student
+---
 
-B40 Household
+## • **Automatic Service Matching**
+MyLayak automatically identifies services the citizen is **pre-qualified** for using verified SETs.
 
-Senior Citizen
+---
 
-Regional Eligibility
+## • **One-Click Activation with Clear Consent**
+Only eligibility attributes are shared.  
+**No IC number, income, documents, or personal info** are ever displayed or transmitted.
 
-• Automatic Service Matching
+---
 
-MyLayak identifies services the citizen is pre-qualified for using verified SETs.
+## • **Complete Kiosk Flow Prototype**
+Welcome → Authentication → Eligibility Wallet → Services → Consent → Activation → Success → Auto Logout
 
-• One-Click Activation with Clear Consent
+---
 
-Only eligibility attributes are shared.
-No IC number, income, or documents are ever displayed or transmitted.
+# 🔐 Security Model (Simplified)
+MyLayak follows a **strict Zero-Trust architecture**, where the kiosk is always treated as untrusted.
 
-• Complete Kiosk Flow Prototype
+## • **Identity–Eligibility Separation**
+- MyDigital ID handles all identity & biometric verification  
+- MyLayak receives only a **hashed ID** and **non-sensitive eligibility tokens**
 
-Welcome → Authentication → Eligibility Wallet → Services → Consent → Activation → Success → Auto Logout.
+## • **Soulbound Eligibility Tokens (SETs)**
+- Issued & signed by a government Oracle  
+- Non-transferable and cannot be forged  
 
-🔐 Security Model (Simplified)
+## • **Secure Communication**
+Assumes modern encrypted channels suitable for future-safe deployments.
 
-MyLayak follows a strict Zero-Trust architecture.
-The kiosk is treated as untrusted at all times.
+## • **No Data Stored on Kiosk**
+No caching, no tokens, no personal information.  
+Steganographic markers help prevent spoofed QR or fake kiosk screens.
 
-• Identity–Eligibility Separation
+**Result:** Even if the kiosk is compromised, identity remains protected and eligibility cannot be altered.
 
-MyDigital ID handles all identity & biometric verification
+---
 
-MyLayak receives only a hashed ID and non-sensitive eligibility tokens
-
-• Soulbound Eligibility Tokens (SETs)
-
-Issued and signed by a government Oracle
-
-Non-transferable and cannot be forged
-
-• Secure Communication
-
-All kiosk–backend interactions assume modern, encrypted channels suitable for future-safe deployments.
-
-• No Data Stored on Kiosk
-
-No caching, no tokens, no personal info.
-Steganographic markers help prevent fake QR screens or spoofed kiosks.
-
-Result: Even if the kiosk is compromised, identity remains protected and eligibility cannot be altered.
-
-🚀 Running the Prototype
+# 🚀 Running the Prototype
 
 Install dependencies:
 
+```sh
 npm i
-
-
 Start development server:
-
 npm run dev
+```sh
+---
 
 📁 Project Status
-
 This repository contains UI/UX screens only.
-It is intended for demonstration, pitching, and concept validation — not production deployment.
+It is intended for demonstration, pitching, and concept validation, not production use.
 
 📘 License
-
 MIT License.
